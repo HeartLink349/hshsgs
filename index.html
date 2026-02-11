@@ -418,10 +418,6 @@
                 <figcaption class="cap">معاكِ كل حاجة <span class="tiny">بتبقى أحلى</span></figcaption>
               </figure>
               <figure class="imgcard">
-                <div class="imgwrap"><img src="https://g.top4top.io/p_3693o92uw1.jpg" alt="صورة 4"></div>
-                <figcaption class="cap">قلبك أمان <span class="tiny">وأنا اختارته</span></figcaption>
-              </figure>
-              <figure class="imgcard">
                 <div class="imgwrap"><img src="https://h.top4top.io/p_3693ylcgn1.jpg" alt="صورة 5"></div>
                 <figcaption class="cap">كل يوم معاكي <span class="tiny">عيد</span></figcaption>
               </figure>
@@ -467,7 +463,6 @@
   <script>
     const PASSWORD = "24";
     
-    // إعداد تاريخ البداية المطلوب: 4 سنين و 8 شهور و 20 يوم و 8 ساعات
     function getStartDate() {
       const now = new Date();
       const start = new Date(now.getTime());
@@ -475,7 +470,6 @@
       start.setMonth(now.getMonth() - 8);
       start.setDate(now.getDate() - 20);
       start.setHours(now.getHours() - 8);
-      // الدقائق والثواني ستبدأ من اللحظة الحالية في العد التصاعدي
       return start;
     }
 
@@ -672,7 +666,6 @@
         h.rot += h.vr;
 
         const grad = ctx.createLinearGradient(h.x-h.s, h.y-h.s, h.x+h.s, h.y+h.s);
-        // ألوان القلوب برضه خليتها درجات الأحمر الفخم
         if(h.c){
           grad.addColorStop(0, `rgba(220,38,38,${h.a})`);
           grad.addColorStop(1, `rgba(153,27,27,${h.a*0.9})`);
